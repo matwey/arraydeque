@@ -78,6 +78,8 @@ use maybe_uninit::MaybeUninit;
 
 mod array;
 pub mod behavior;
+#[cfg(feature = "std")]
+pub mod io;
 mod error;
 mod maybe_uninit;
 mod range;
